@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="home.html" class="w3-bar-item w3-button">HOMEPAGE</a>
+  <a href="covid.html" class="w3-bar-item w3-button">COVID-19</a>
+  <a href="vaccine.html" class="w3-bar-item w3-button">VACCINE</a>
+  <a href="stepvaccine.html" class="w3-bar-item w3-button">VACCINATION PROCEDURE</a>
+  <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+</div>
+
+<div id="main">
+
+<div style="background-color: #26C2E3;" class="main">
+  <button id="openNav" class="w3-button w3-xlarge" style="color: white;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 align="center">CUSTOMER SERVICE</h1>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+  <img src="images/KKM1.png" width="30%" align="center" >
+  <div class="centered" style="background-color: lightblue; opacity: 0.8">
+    <p><b>Tel:03-80008000 </b></p>
+    <p><b>Fax:03-88886187 </b></p>
+    <p><b>Email:kkm[at]moh.gov.my </b></p></div>
+</div>
+
+
+<div class="container">
+<img src="images/jkj.png" width="30%" align="center" >
+<div class="centered" style="background-color: lightblue; opacity: 0.8; margin-left: 100px">
+<a style="margin-left: 100px"href="https://www.facebook.com/jkjavm y" target="_blank"><img src="images/fb.webp" width="55px"></a>
+<a style="margin-left: 100px"href="https://www.instagram.com/jkjavmy/" target="_blank"><img src="images/ig.png" width="55px"></a>
+<a style="margin-left: 100px"href="https://twitter.com/jkjavmy" target="_blank"><img src="images/twitter1.png" width="55px"></a></div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+  <img src="images/IPD.png" width="30%" align="center" >
+  <div class="centered" style="background-color: lightblue; opacity: 0.8; margin-left: 100px">
+    <p><b>Address:Jalan Padang Tembak, Pengkalan Chepa, 16100, Kota Bharu, Kelantan </b></p>
+    <p><b>Hours:Open 24 hours </b></p>
+    <p><b>Phone:09-775 2200 </b></p></div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+  <img src="images/balaibomba.png" width="20%" align="center" >
+  <div class="centered" style="background-color: lightblue; opacity: 0.8; margin-left: 100px">
+    <p><b>Address:Jalan Long Yunus, 15200 Kota Bharu, Kelantan </b></p>
+    <p><b>Hours:Open 24 hours </b></p>
+    <p><b>Phone:09-748 4444 </b></p></div>
+</div>
+
+
+
+<style>
+
+.container
+    {
+        position: relative;
+        text-align: center;
+        color: black;
+        text-align: justify;
+
+
+    }
+
+.centered   
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  
+table 
+    {
+       padding-left: 50px;
+    }
+    td, th 
+    {
+      text-align: center;
+      padding-right: 50px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 30px;
+    }
+
+
+
+</style>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<div class="w3-container w3-black">
+  <p align="center">For more info about COVID-19 and vaccination program, contact:</p>
+  <p style="text-align: center;"><a href="https://www.moh.gov.my/">Ministry Of Health Malaysia</a></p>
+  <p style="text-align: center;"><a href="https://www.vaksincovid.gov.my/">PROGRAM IMUNISASI COVID-19 KEBANGSAAN</a></p>
+  <h5 align="center">©BASHIRAH,BIBI,FAFA,SYAFIQ</h5>
+ 
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+</body>
+</html>
